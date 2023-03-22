@@ -1,4 +1,4 @@
 ## python_autotests_
 Автотесты на Python + Selenium
-- применение WebDriverWait
+- Применение WebDriverWait
 - Несколько локаторов
