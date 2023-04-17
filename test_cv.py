@@ -11,9 +11,18 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 def test_title_validation(browser):
     
-    url = "https://qagu.ru/"
+    url = "https://greasemonkey-nt.github.io/"
     browser.get(url=url)
 
     title = browser.find_element(By.CLASS_NAME, value="title")
 
     assert title.text == 'QA-Engineer', "Unexpected title"
+
+def test_subtitle_validation(browser):
+    
+    url = "https://greasemonkey-nt.github.io/"
+    browser.get(url=url)
+
+    title = browser.find_element(By.CLASS_NAME, value="subtitle")
+
+    assert title.text == 'Николай Тарасов', "Unexpected title"
